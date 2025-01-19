@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MolitVUm"
+rootProject.name = "MolitvUM_GriOE"
 include(":app")
  

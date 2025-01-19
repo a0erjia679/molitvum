@@ -1,0 +1,68 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundLight">
+
+    <!-- Поле ввода названия -->
+    <EditText
+        android:id="@+id/etPrayerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_prayer_title"
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Поле ввода текста на русском -->
+    <EditText
+        android:id="@+id/etPrayerTextRussian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_prayer_text_russian"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etPrayerTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Поле ввода текста на церковнославянском -->
+    <EditText
+        android:id="@+id/etPrayerTextChurchSlavonic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_prayer_text_church_slavonic"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etPrayerTextRussian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Кнопки -->
+    <Button
+        android:id="@+id/btnSavePrayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/etPrayerTextChurchSlavonic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeletePrayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_delete"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/btnSavePrayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,48 @@
 <resources>
     <string name="app_name">МолитвУМ</string>
-    <string name="title_home">Календарь</string>
-    <string name="title_dashboard">Поставить свечку</string>
-    <string name="title_notifications">Молитвы</string>
-    <string name="title_prayers_studying">Молитвы для учебы</string>
-    <string name="title_personal">Личный молитвослов</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="btn_next_prayers">Следующая молитва</string>
-    <string name="btn_add_prayers">Добавить молитву</string>
+    <string name="title_study_prayers">Молитвы для учёбы</string>
+    <string name="title_personal_prayers">Молитвы</string>
+    <string name="title_calendar">Календарь</string>
+    <string name="title_candle">Поставить свечу</string>
+    <string name="add_prayer">Добавить молитву</string>
+    <string name="edit_prayer">Редактировать молитву</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="delete_prayer">Удалить молитву</string>
+    <string name="prayer_title_hint">Название молитвы</string>
+    <string name="prayer_text_russian_hint">Текст молитвы на русском</string>
+    <string name="prayer_text_church_slavonic_hint">Текст молитвы на церковнославянском</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_church_slavonic">Церковнославянский</string>
+    <string name="hint_prayer_text_russian">Добавьте текст молитвы</string>
+    <string name="hint_prayer_title">Добавьте название</string>
+    <string name="hint_prayer_text_church_slavonic">Добавьте текст молитвы</string>
 
+    <string name="change_language">Сменить язык</string>
+
+
+    <string name="error_missing_title_or_text">Введите название и текст хотя бы на одном языке</string>
+    <string name="confirm_delete_prayer">Вы уверены, что хотите удалить эту молитву?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <!-- Screen titles -->
+    <string name="title_edit_prayer">Редактировать молитву</string>
+    <string name="title_add_prayer">Добавить молитву</string>
+
+    <!-- Button labels -->
+    <string name="btn_add">Добавить</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_delete">Удалить</string>
+    <string name="btn_edit">Редактировать</string>
+
+    <!-- Error messages -->
+    <string name="error_empty_prayer_title">Название молитвы не может быть пустым</string>
+    <string name="error_empty_prayer_text">Текст молитвы должен быть заполнен хотя бы на одном языке</string>
+
+    <!-- Other UI elements -->
+    <string name="hint_search_prayers">Поиск молитв...</string>
+    <string name="no_prayers_found">Молитвы не найдены</string>
+    <string name="personal_prayers_empty">Ваш личный молитвослов пока пуст</string>
+    <string name="add_first_prayer">Добавьте первую молитву!</string>
 </resources>

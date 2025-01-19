@@ -6,25 +6,48 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/logo"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MolitVUm"
+        android:theme="@style/Theme.MolitvUM_GriOE"
         tools:targetApi="31">
-        <activity
-            android:name=".PrayersStudying"
-            android:exported="false" />
+        <!-- Главная активность -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Активность для "Молитвы для учёбы" -->
+        <activity
+            android:name=".StudyPrayersActivity"
+            android:exported="true"
+            android:label="@string/title_study_prayers" />
+
+        <!-- Активность для "Личный молитвослов" -->
+        <activity
+            android:name=".PersonalPrayersActivity"
+            android:exported="true"
+            android:label="@string/title_personal_prayers" />
+
+        <!-- Активность для "Календарь" -->
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="true"
+            android:label="@string/title_calendar" />
+
+        <!-- Активность для "Поставить свечу" -->
+        <activity
+            android:name=".CandleActivity"
+            android:exported="true"
+            android:label="@string/title_candle" />
+
+
     </application>
 
 </manifest>

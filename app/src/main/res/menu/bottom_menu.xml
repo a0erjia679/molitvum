@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_calendar"
+        android:title="Календарь"
+        android:icon="@drawable/ic_calendar" />
+    <item
+        android:id="@+id/menu_home"
+        android:title="Главная"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/menu_candle"
+        android:title="Поставить свечу"
+        android:icon="@drawable/ic_candle" />
+</menu>
