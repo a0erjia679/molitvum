@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">МолитвУМ</string>
+    <string name="title_home">Календарь</string>
+    <string name="title_dashboard">Поставить свечку</string>
+    <string name="title_notifications">Молитвы</string>
+    <string name="title_prayers_studying">Молитвы для учебы</string>
+    <string name="title_personal">Личный молитвослов</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_next_prayers">Следующая молитва</string>
+    <string name="btn_add_prayers">Добавить молитву</string>
+
+</resources>

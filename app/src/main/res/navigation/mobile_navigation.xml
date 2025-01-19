@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_notifications">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.molitvum.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.molitvum.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.molitvum.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications">
+        <action
+        android:id="@+id/action_to_navigation_prayers"
+        app:destination="@id/navigation_prayers" />
+        <action
+            android:id="@+id/action_to_navigation_personal_prayers"
+            app:destination="@id/navigation_personal_prayers" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_prayers"
+        android:name="com.example.molitvum.ui.prayers.PrayersFragment"
+        android:label="@string/title_prayers_studying"
+        tools:layout="@layout/fragment_prayers" />
+    <fragment
+        android:id="@+id/navigation_personal_prayers"
+        android:name="com.example.molitvum.ui.personal.PersonalPrayersFragment"
+        android:label="@string/title_personal"
+        tools:layout="@layout/fragment_personal_prayers" />
+</navigation>
+
+
