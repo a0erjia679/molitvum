@@ -34,6 +34,7 @@
     <!-- Раздел "Личный молитвослов" -->
     <Button
         android:id="@+id/btnPersonalPrayers"
+        android:visibility="gone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Личный молитвослов"
@@ -43,6 +44,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnStudyPrayers"
         android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/menuImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/menu_pic"
+        android:contentDescription="Menu Image"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
     <!-- Нижнее меню -->
     <com.google.android.material.bottomnavigation.BottomNavigationView

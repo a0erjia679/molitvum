@@ -16,14 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Настройка нижнего меню
+        // нижнее меню
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        // Установите обработчик нажатий
+        //  обработчик нажатий
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                // Используем if-else вместо switch
                 if (item.getItemId() == R.id.menu_home) {
                     // Главный экран
                     return true;
@@ -42,17 +41,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Настройка кнопок для переходов
         Button btnStudyPrayers = findViewById(R.id.btnStudyPrayers);
-        Button btnPersonalPrayers = findViewById(R.id.btnPersonalPrayers);
 
-        // Установите обработчики нажатий для кнопок
+        // обработчик нажатий для кнопок
         btnStudyPrayers.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, StudyPrayersActivity.class);
             startActivity(intent);
         });
 
-        btnPersonalPrayers.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, PersonalPrayersActivity.class);
-            startActivity(intent);
-        });
     }
 }

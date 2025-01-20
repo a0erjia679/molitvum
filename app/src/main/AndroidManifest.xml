@@ -29,11 +29,9 @@
             android:exported="true"
             android:label="@string/title_study_prayers" />
 
-        <!-- Активность для "Личный молитвослов" -->
-        <activity
-            android:name=".PersonalPrayersActivity"
-            android:exported="true"
-            android:label="@string/title_personal_prayers" />
+
+
+
 
         <!-- Активность для "Календарь" -->
         <activity

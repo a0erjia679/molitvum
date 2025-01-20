@@ -7,6 +7,7 @@
     <string name="add_prayer">Добавить молитву</string>
     <string name="edit_prayer">Редактировать молитву</string>
     <string name="save_changes">Сохранить изменения</string>
+    <string name="save_prayer">Сохранить</string>
     <string name="delete_prayer">Удалить молитву</string>
     <string name="prayer_title_hint">Название молитвы</string>
     <string name="prayer_text_russian_hint">Текст молитвы на русском</string>
